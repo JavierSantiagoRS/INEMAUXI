@@ -1,0 +1,118 @@
+#imgportada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Para que la imagen cubra todo sin deformarse */
+  z-index: -1; /* Para que quede en el fondo */
+  filter: blur(6px); /* Ajusta el nivel de desenfoque según necesites */
+}
+
+/* From Uiverse.io by barisdogansutcu */
+button {
+  width: 180px;
+  height: 55px;
+  border-radius: 50px;
+  border: solid 4px rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  box-shadow: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+  background-color: hsl(241deg 44% 49%);
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  left: 580px;
+  top: 300px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  z-index: 0;
+}
+
+.loading i {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  display: inline-flex;
+  border-radius: 100%;
+  animation-name: loading5234;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes loading5234 {
+  100% {
+    opacity: 0;
+  }
+}
+
+input:checked + button {
+  transition-delay: 4s;
+  background-color: #31cb20;
+  box-shadow: 0 4px 20px -2px rgb(49 203 32);
+}
+
+.title,
+.approved {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  font-size: 15px;
+}
+
+button .title {
+  background-color: hsl(241deg 44% 49%);
+  width: 90%;
+}
+
+input:checked + button .approved {
+  transition-delay: 4s;
+  visibility: visible;
+  opacity: 1;
+  background-color: #31cb20;
+  width: 90%;
+}
+
+input:checked + button .title {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+input:not(:checked) + button .approved {
+  visibility: hidden;
+  opacity: 1;
+}
+
+input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  outline: none;
+  width: 210px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+

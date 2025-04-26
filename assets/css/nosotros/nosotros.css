@@ -1,0 +1,71 @@
+#nosotros {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  max-width: 530px; /* para pantallas grandes */
+  margin: 0 auto;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+#nosotros .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nosotros h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contenido-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-nosotros {
+  flex: 1 1 100%; /* Toma todo el ancho en pantallas pequeñas */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.texto-nosotros h3 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+.texto-nosotros p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 10px;
+}
+
+.texto-nosotros ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #555;
+}
+
+.texto-nosotros ul li {
+  list-style: disc;
+  margin-bottom: 5px;
+}
+
+#imgportada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Para que la imagen cubra todo sin deformarse */
+  z-index: -1; /* Para que quede en el fondo */
+  filter: blur(6px); /* Ajusta el nivel de desenfoque según necesites */
+}

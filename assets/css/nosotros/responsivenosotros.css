@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  #nosotros {
+    padding: 40px 15px;
+    max-width: 100%; /* casi todo el ancho del móvil */
+    border-radius: 20px;
+  }
+
+  #nosotros h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  .contenido-nosotros {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto-nosotros {
+    flex: 1 1 100%;
+  }
+
+  .texto-nosotros h3 {
+    font-size: 1.2em;
+  }
+
+  .texto-nosotros p {
+    font-size: 0.95em;
+  }
+}

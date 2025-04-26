@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+  #portada {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    position: relative;
+    top: 30px;
+    position: fixed;
+    z-index: 9990;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup2 {
+    display: block;
+    position: absolute; /* o absolute si es relativo a un contenedor */
+    left: 50%; /* centrar horizontalmente */
+    top: 5%; /* opcional: centrar verticalmente */
+    transform: translate(-50%, -50%); /* ajuste real al centro */
+    max-width: 90vw; /* evita que sea más grande que el viewport */
+    max-height: 90vh; /* si quieres que se ajuste verticalmente también */
+    font-size: 19px;
+    z-index: 999; /* opcional, para que quede encima */
+  }
+}
+
+@media (max-width: 600px) {
+  .burger2 {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .popup-window2 {
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%) scale(var(--nav-default-scale));
+    width: 90vw;
+    max-width: 300px;
+    padding: 0.75em;
+    font-size: 14px;
+  }
+
+  .popup2 input:checked ~ nav {
+    transform: translateX(-50%) scale(var(--nav-active-scale));
+  }
+
+  .popup-window2 ul button {
+    font-size: 14px;
+    padding: 0.5em 1em;
+  }
+
+  .popup-window2 legend {
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+  }
+
+  .popup-window2 hr {
+    margin: 0.5em 0;
+  }
+
+  .popup2 {
+    display: inline-block;
+  }
+}
